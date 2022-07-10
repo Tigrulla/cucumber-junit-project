@@ -7,7 +7,9 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 
-        plugin = {"html:target/cucumber-reports.html","json:target/cucumber-report.json",
+        plugin = {
+                "pretty",
+                "html:target/cucumber-reports.html", "json:target/cucumber-report.json",
                 "rerun:target/rerun.txt",
                 "me.jvt.cucumber.report.PrettyReports:target/cucumber"
         },
@@ -15,7 +17,8 @@ import org.junit.runner.RunWith;
         glue = "com/cydeo/step_definitions",
         dryRun = false,
         monochrome = true,
-        tags = "@B26G12-57"
+        tags = "@B26G12-57",
+        publish = true
 
 )
 public class CukesRunner {

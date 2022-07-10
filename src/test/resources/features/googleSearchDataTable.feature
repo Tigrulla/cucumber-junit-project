@@ -1,3 +1,4 @@
+@smoke
 Feature: Passing multiple parameters to the step
 @dataTable
   Scenario: User searches for multiple items
