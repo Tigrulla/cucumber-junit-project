@@ -47,6 +47,5 @@ public class GridSettingStepDefs {
         int xPos = Driver.getDriver().findElement(By.xpath("//a[@title='Reset']")).getLocation().getX();
 
         Assert.assertTrue("location verification failed", xPos > winWidth / 2);
-
     }
 }

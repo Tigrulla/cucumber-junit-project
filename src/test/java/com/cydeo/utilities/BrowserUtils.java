@@ -34,6 +34,7 @@ public class BrowserUtils {
         String actualTitle = Driver.getDriver().getTitle();
 
         Assert.assertTrue("Title verification failed!", actualTitle.contains(expectedTitle));
+
     }
 
 
